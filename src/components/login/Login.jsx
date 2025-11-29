@@ -42,7 +42,7 @@ function Login() {
 
         try {
             // تسجيل الدخول كـ Admin
-            const response = await axios.post("http://127.0.0.1:8000/api/Admin/login", formData);
+            const response = await axios.post("https://dern-support-backend-production.up.railway.app/api/Admin/login", formData);
             if (response.data.message === "Login successful") {
                 handleSuccess(response, "AdminHome", "Admin");
                 return;
@@ -53,7 +53,7 @@ function Login() {
 
         try {
             // تسجيل الدخول كـ Courier
-            const response = await axios.post("http://127.0.0.1:8000/api/courier/login", formData);
+            const response = await axios.post("https://dern-support-backend-production.up.railway.app/api/courier/login", formData);
             if (response.data.message === "Login successful") {
                 handleSuccess(response, "CourierHome", "Courier");
                 console.log(response.data)
@@ -65,7 +65,7 @@ function Login() {
 
         try {
             // تسجيل الدخول كـ User عادي
-            const response = await axios.post("http://127.0.0.1:8000/api/login", formData);
+            const response = await axios.post("https://dern-support-backend-production.up.railway.app/api/login", formData);
             handleSuccess(response, "UserHome", "User");
         } catch (err) {
             toast.error("Invalid email or password", { position: "bottom-right", autoClose: 3000 });

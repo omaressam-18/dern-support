@@ -17,7 +17,6 @@ import NavbarC from './components/navbar courier/NavbarC';
 function App() {
   return (
     <div className='App'>
-      
       <Routes>
       <Route
           path="/"

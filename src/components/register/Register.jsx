@@ -31,7 +31,7 @@ function Register() {
         }
 
         try {
-            const response = await axios.post('http://127.0.0.1:8000/api/users', {
+            const response = await axios.post('https://dern-support-backend-production.up.railway.app/api/users', {
                 name: formData.name,
                 email: formData.email,  
                 password: formData.password,

@@ -35,7 +35,7 @@ function AdminHome() {
 
     const fetchRequests = async () => {
       try {
-        const response = await axios.get("http://127.0.0.1:8000/api/requests", {
+        const response = await axios.get("https://dern-support-backend-production.up.railway.app/api/requests", {
           headers: {
             Authorization: `Bearer ${localStorage.getItem("token")}`,
             'Cache-Control': 'no-cache'
@@ -49,7 +49,7 @@ function AdminHome() {
         const userIds = [...new Set(requestData.map(req => req.user_id))];
         const userResponses = await Promise.all(
           userIds.map(id =>
-            axios.get(`http://127.0.0.1:8000/api/users/${id}`, {
+            axios.get(`https://dern-support-backend-production.up.railway.app/api/users/${id}`, {
               headers: {
                 Authorization: `Bearer ${localStorage.getItem("token")}`,
                 'Cache-Control': 'no-cache'
@@ -81,7 +81,7 @@ function AdminHome() {
   useEffect(() => {
     const fetchCouriers = async () => {
       try {
-        const response = await axios.get("http://127.0.0.1:8000/api/couriers", {
+        const response = await axios.get("https://dern-support-backend-production.up.railway.app/api/couriers", {
           headers: { Authorization: `Bearer ${localStorage.getItem("token")}` }
         });
         setCouriers(response.data.data);
@@ -107,7 +107,7 @@ function AdminHome() {
       let response;
       if (newStatus === "In Progress") {
         response = await axios.put(
-          `http://127.0.0.1:8000/api/requests/${id}`,
+          `https://dern-support-backend-production.up.railway.app/api/requests/${id}`,
           { status: newStatus, courier_id: selectedCourierId },
           {
             headers: {
@@ -118,7 +118,7 @@ function AdminHome() {
         );
       } else {
         response = await axios.put(
-          `http://127.0.0.1:8000/api/requests/${id}`,
+          `https://dern-support-backend-production.up.railway.app/api/requests/${id}`,
           { status: newStatus },
           {
             headers: {
@@ -160,7 +160,7 @@ function AdminHome() {
 
     try {
       const response = await axios.put(
-        `http://127.0.0.1:8000/api/requests/${selectedRequestId}`,
+        `https://dern-support-backend-production.up.railway.app/api/requests/${selectedRequestId}`,
         { courier_id: selectedCourierId },
         {
           headers: {
@@ -187,7 +187,7 @@ function AdminHome() {
   // Delete courier
   const deleteCourier = async (id) => {
     try {
-      const response = await axios.delete(`http://127.0.0.1:8000/api/couriers/${id}`, {
+      const response = await axios.delete(`https://dern-support-backend-production.up.railway.app/api/couriers/${id}`, {
         headers: { Authorization: `Bearer ${localStorage.getItem("token")}` }
       });
 

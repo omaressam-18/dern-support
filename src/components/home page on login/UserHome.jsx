@@ -34,7 +34,7 @@ function UserHome() {
                 }
                 console.log(userData)
 
-                const response = await axios.get(`http://127.0.0.1:8000/api/requests?user_id=${userData.id}`, {
+                const response = await axios.get(`https://dern-support-backend-production.up.railway.app/api/requests?user_id=${userData.id}`, {
                     headers: { "Authorization": `Bearer ${localStorage.getItem("token")}` }
                 });
 
@@ -77,7 +77,7 @@ function UserHome() {
         }
         console.log(requestData)
         try {
-            const response = await axios.post("http://127.0.0.1:8000/api/requests", requestData, {
+            const response = await axios.post("https://dern-support-backend-production.up.railway.app/api/requests", requestData, {
                 headers: {
                     "Content-Type": "application/json",
                     "Authorization": `Bearer ${localStorage.getItem("token")}`
@@ -102,7 +102,7 @@ function UserHome() {
 useEffect(() => {
     const fetchCouriers = async () => {
         try {
-            const response = await axios.get("http://127.0.0.1:8000/api/couriers", {
+            const response = await axios.get("https://dern-support-backend-production.up.railway.app/api/couriers", {
                 headers: { Authorization: `Bearer ${localStorage.getItem("token")}` }
             });
             setCouriers(response.data.data);

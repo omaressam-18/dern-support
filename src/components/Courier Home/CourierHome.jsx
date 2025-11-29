@@ -31,7 +31,7 @@ function CourierHome() {
         }
 
         try {
-            const response = await axios.get(`http://127.0.0.1:8000/api/requests?courier_id=${courier.id}`, {
+            const response = await axios.get(`https://dern-support-backend-production.up.railway.app/api/requests?courier_id=${courier.id}`, {
                 headers: { "Authorization": `Bearer ${localStorage.getItem("token")}` }
             });
 
@@ -56,7 +56,7 @@ function CourierHome() {
             toast.info('Updating status...', { autoClose: false });
 
             const response = await axios.put(
-                `http://127.0.0.1:8000/api/requests/${id}`,
+                `https://dern-support-backend-production.up.railway.app/api/requests/${id}`,
                 { status: "Completed" }, // تحديث الحالة إلى "Completed" فقط
                 {
                     headers: {
