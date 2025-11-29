@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/dern-support/static/css/main.a48cd46b.css",
-    "main.js": "/dern-support/static/js/main.6e2516f4.js",
+    "main.js": "/dern-support/static/js/main.2854bcf3.js",
     "static/js/453.f7be5b23.chunk.js": "/dern-support/static/js/453.f7be5b23.chunk.js",
     "static/media/online-idea (1).png": "/dern-support/static/media/online-idea (1).5671213ea53e1ba02707.png",
     "static/media/online-discussion_11747925.png": "/dern-support/static/media/online-discussion_11747925.566c38fa33e2b901dc14.png",
@@ -9,11 +9,11 @@
     "static/media/Logo.svg": "/dern-support/static/media/Logo.626bf13b1aba1a4cbac54b7d604fb32a.svg",
     "index.html": "/dern-support/index.html",
     "main.a48cd46b.css.map": "/dern-support/static/css/main.a48cd46b.css.map",
-    "main.6e2516f4.js.map": "/dern-support/static/js/main.6e2516f4.js.map",
+    "main.2854bcf3.js.map": "/dern-support/static/js/main.2854bcf3.js.map",
     "453.f7be5b23.chunk.js.map": "/dern-support/static/js/453.f7be5b23.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.a48cd46b.css",
-    "static/js/main.6e2516f4.js"
+    "static/js/main.2854bcf3.js"
   ]
 }
