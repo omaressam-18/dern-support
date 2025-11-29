@@ -7,6 +7,14 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+:root {
+  --primary-color: #6376db;
+  --secondary-color: #171823;
+
+  --font-body: "Roboto", sans-serif;
+  --font-heading: "Montserrat", sans-serif;
+}
+
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;

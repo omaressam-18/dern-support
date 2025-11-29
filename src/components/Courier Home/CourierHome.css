@@ -1,0 +1,29 @@
+.completed {
+    color: green;
+  }
+  
+  .pending {
+    color: orange;
+  }
+  
+  .in-progress {
+    color: blue;
+  }
+  
+  .rejected {
+    color: red;
+  }
+  
+  .btn-primary {
+    background-color: #007bff;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+  }
+  
+  .btn-primary:disabled {
+    background-color: #6c757d;
+    cursor: not-allowed;
+  }

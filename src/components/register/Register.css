@@ -1,0 +1,62 @@
+/* Container for the registration form */
+.register-container {
+    background-color: #171823;
+    color: white;
+    width: 40%;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 5px 10px 20px black;
+}
+
+/* Heading style */
+.register-heading {
+    color: var(--primary-color);
+    font-family: var(--font-heading);
+    font-weight: 800;
+}
+
+/* Form input fields */
+.form-control {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    background-color: #2a2b3d;
+}
+
+/* Form labels */
+.form-label {
+    font-weight: bold;
+    margin-bottom: 5px;
+    display: block;
+}
+
+/* Submit button */
+.btn-primary {
+    background-color: var(--primary-color);
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.btn-primary:hover {
+    background-color: darken(var(--primary-color), 10%);
+}
+
+/* Error message */
+.text-danger {
+    color: red;
+    margin-bottom: 15px;
+}
+input{
+    background-color: transparent !important;
+    color: white !important;
+}
+
+input::placeholder{
+    color: white !important;
+    opacity: 50% !important;
+}
