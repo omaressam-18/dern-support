@@ -2,6 +2,7 @@
   "name": "front-end",
   "version": "0.1.0",
   "homepage": "https://omaressam-18.github.io/dern-support/",
+  "proxy": "https://https://dern-support-backend-production.up.railway.app/",
   "private": true,
   "dependencies": {
     "@testing-library/dom": "^10.4.0",
